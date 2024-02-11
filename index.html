@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojonary</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container_top_level">
+        <div class="container_top_blue_band">
+            <div class="container_navbar">
+                <p class="page_title">DojoWeather</p>
+                <p class=buffer>     </p>
+                <button class="cities" onclick="alert('Loading weather report...')">Burbank</button>
+                <button class="cities" onclick="alert('Loading weather report...')">Chicago</button>
+                <button class="cities" onclick="alert('Loading weather report...')">Dallas</button>
+            </div>
+        </div>
+    </div>
+    <div class="container_2nd_top_white_band">
+        <div class="container_local_weather">
+            <p class="local_city">San Jose</p>
+            <div class="temp_display_selection">
+                <p class="text_for_2nd_white_bar">show temperature in </p>
+                <select id="celsius_or_farenheit" onchange="change_temperature_scale(this)">
+                    <option value="C">&deg;C </option>
+                    <option value="F">&deg;F </option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="container_bottom_white_section">
+        <div class="container_main_content">
+            <div class="container_column_ONE_of_main_content">
+                <div class="top_of_column_block">
+                    <p class="day">Today</p>
+                    <p class="center_me"><img class="format_of_picture" src="./assets/some_rain.png" alt="Some Rain"></p>
+                    <p class="forecast">some rain</p>
+                    <p class="high_and_low"><span class="high_for_the_day">24&deg;</span><span class="inline_buffer">    </span><span class="low_for_the_day">18&deg;</span></p>
+                </div>
+            </div>
+            <div class="container_column_TWO_of_main_content">
+                <div class="top_of_column_block">
+                    <p class="day">Tomorrow</p>
+                    <p class="center_me"><img class="format_of_picture" src="./assets/some_sun.png" alt="Some Sun"></p>
+                    <p class="forecast">some sun</p>
+                    <p class="high_and_low"><span class="high_for_the_day">27&deg;</span><span class="inline_buffer">    </span><span class="low_for_the_day">19&deg;</span></p>
+                </div>
+            </div>
+            <div class="container_column_THREE_of_main_content">
+                <div class="top_of_column_block">
+                    <p class="day">Friday</p>
+                    <p class="center_me"><img class="format_of_picture" src="./assets/some_clouds.png" alt="Some Clouds"></p>
+                    <p class="forecast">some clouds</p>
+                    <p class="high_and_low"><span class="high_for_the_day">21&deg;</span><span class="inline_buffer">    </span><span class="low_for_the_day">16&deg;</span></p>
+                </div>
+            </div>
+            <div class="container_column_FOUR_of_main_content">
+                <div class="top_of_column_block">
+                    <p class="day">Saturday</p>
+                    <p class="center_me"><img class="format_of_picture" src="./assets/some_sun.png" alt="Some Sun"></p>
+                    <p class="forecast">some sun</p>
+                    <p class="high_and_low"><span class="high_for_the_day">26&deg;</span><span class="inline_buffer">    </span><span class="low_for_the_day">21&deg;</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="container_cookie_time">
+            <div class="left_side_of_alert">
+                <p><img class="format_of_picture2" src="./assets/cookie.png" alt="Cookie"></p>
+            </div>
+            <div class="midsection_of_alert">
+                <p class="bold_section_of_alert">Stop! Cookie time</p>
+                <p class="regular_section_of_alert">
+                    <span>We use cookies (sadly not the edible ones) to personalize</span>
+                    <span>content and ads to provide social media features and to</span>
+                    <span>analyse our traffic. <a href="#">Read more...</a></span>
+                </p>
+            </div>
+            <div class="right_side_of_alert">
+                <button class="btn" onclick="remove_cookie()">I Accept</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
