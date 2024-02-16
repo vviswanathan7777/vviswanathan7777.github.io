@@ -3,13 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Query Example2</title>
-    <link rel="stylesheets" href="./style.css">
+    <title>Bootstrap Lecture</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="./style.css"> 
 </head>
 <body>
-    <div class="col sm-0 med-1">
-        <h5>Did you know?</h5>
-        <p>If you could fold a piece of paper 42 times, it would be tall enough to reach the moon.</p>
-     </div>     
+    <div class="container-fluid bg-danger py-2">
+        <div class="row align-items-center">
+            <div class="col">
+                <p class="fs-1 fw-bold mb-0">Welcome to Venkat's Soldier Shop</p>
+            </div>
+            <div class="col d-flex justify-content-end align-items-center gap-4">
+                <nav>
+                    <a href="#" class="text-white fs-3 fw-bold text-decoration-none">Home</a>
+                    <a href="#" class="text-white fs-3 fw-bold text-decoration-none">About</a>
+                    <a href="#" class="text-white fs-3 fw-bold text-decoration-none">Blog</a>
+                </nav>
+                <form action="#" class="d-flex align-items-center gap-2">
+                    <input type="text" name="search">
+                    <input type="submit" name="Search" class="btn btn-dark">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-10 offset-1 border border-top-1 border-bottom-1 border-black border-2">
+                <h2 class="d-flex justify-content-center align-items-center py-4 display-3">Featured Product</h2>
+                <div class="d-flex justify-content-start align-items-center">
+                    <div class="col-5">
+                        <div class="d-flex justify-content-center align-items-start">
+                            <img src="./golden_sword_of_battle.jpg" class="w-100 d-flex justify-content-start align-items-center mb-4 offset-1">
+                        </div>
+                    </div>
+                    <div class="col-5 offset-1">
+                        <h1 class="d-flex justify-content-center align-items-start">AKA "Word of God"</h1>
+                        <p class="d-flex justify-content-end align-items-center">Hebrews 4:12 - For the word of God is alive and active. Sharper than any double-edged sword, it penetrates even to dividing soul and spirit, joints and marrow; it judges the thoughts and attitudes of the heart.</p>
+                        <div class="col d-flex flex-column justify-content-start">
+                            <button class="btn btn-success">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10 offset-1 border border-top-0 border-bottom-0 border-black border-2">
+                <h2>Other Heroic Products</h2>
+                <div class="row px-3 gap-3">
+                    <div class="col d-flex flex-column justify-content-between border border-black border-2 p-3">
+                        <div class="text-center">
+                            <img src="./belt_of_truth.jpg" class="related_product_image">
+                            <h3>Belt of Truth</h3>                    
+                        </div>
+                        <button class="btn btn-success">Add to Cart</button>
+                    </div>
+                    <div class="col d-flex flex-column justify-content-between border border-black border-2 p-3">
+                        <div class="text-center">
+                            <img src="./boots_of_the_Gospel_of_peace.jpg" class="related_product_image">
+                            <h3>Boots of the Gospel of Peace</h3>                    
+                        </div>
+                        <button class="btn btn-success">Add to Cart</button>
+                    </div>
+                    <div class="col d-flex flex-column justify-content-between border border-black border-2 p-3">
+                        <div class="text-center">
+                            <img src="./shield_of_faith.jpg" class="related_product_image">
+                            <h3>Shield of Faith</h3>                    
+                        </div>
+                        <button class="btn btn-success">Add to Cart</button>
+                    </div>
+                    <div class="col d-flex flex-column justify-content-between border border-black border-2 p-3">
+                        <div class="text-center">
+                            <img src="./helmet_of_salvation.jpg" class="related_product_image">
+                            <h3>Helmet of Salvation</h3>                    
+                        </div>
+                        <button class="btn btn-success">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle. min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh950GNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
